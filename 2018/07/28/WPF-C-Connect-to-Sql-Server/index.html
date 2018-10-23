@@ -1,0 +1,919 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css">
+
+
+  <meta name="keywords" content="C#,WPF,SqlServer,">
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0">
+
+
+
+
+
+
+<meta name="description" content="Check the ConnectInput ServerName, DatabaseName, UserName and Password, then click a button, it should show the connetion message. In this part, i designed a login windows, user need input their Serve">
+<meta name="keywords" content="C#,WPF,SqlServer">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WPF&amp;C#: Connect to Sql Server">
+<meta property="og:url" content="http://clovel.cn/2018/07/28/WPF-C-Connect-to-Sql-Server/index.html">
+<meta property="og:site_name" content="Code_Cheng Site">
+<meta property="og:description" content="Check the ConnectInput ServerName, DatabaseName, UserName and Password, then click a button, it should show the connetion message. In this part, i designed a login windows, user need input their Serve">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-08-30T17:50:46.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="WPF&amp;C#: Connect to Sql Server">
+<meta name="twitter:description" content="Check the ConnectInput ServerName, DatabaseName, UserName and Password, then click a button, it should show the connetion message. In this part, i designed a login windows, user need input their Serve">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://clovel.cn/2018/07/28/WPF-C-Connect-to-Sql-Server/">
+
+  <title> WPF&C#: Connect to Sql Server | Code_Cheng Site </title>
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="en">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Code_Cheng Site</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">python | html5 | javascript | database | Everything I Want</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>
+            
+            Commonweal 404
+          </a>
+        </li>
+      
+
+      
+
+      <!-- 自定义High一下的功能 -->
+      <li class="menu-item"> <a title="把这个链接拖到你的工具栏中,任何网页都可以High" href="javascript:(
+    /*
+     * Copyright (C) 2016 Never_yu (Neveryu.github.io) <React.dong.yu@gmail.com>
+     * Sina Weibo (http://weibo.com/Neveryu)
+     *
+     * Licensed under the Apache License, Version 2.0 (the "License");
+     * you may not use this file except in compliance with the License.
+     * You may obtain a copy of the License at
+     *
+     *      http://www.apache.org/licenses/LICENSE-2.0
+     *
+     * Unless required by applicable law or agreed to in writing, software
+     * distributed under the License is distributed on an "AS IS" BASIS,
+     * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     * See the License for the specific language governing permissions and
+     * limitations under the License.
+     */
+    function go() {
+
+
+    var songs = [
+                "http://bdyun.65dj.com:8090/2015/06/28/84791C997D8C55023DAD0D5690E48C28/%D1%A6%D6%AE%C7%AB%20-%20%D1%DD%D4%B1.mp3",
+                "http://7xoiki.com1.z0.glb.clouddn.com/Music-sunburst.mp3",
+                ""
+    ];
+
+    
+    function c() {
+        var e = document.createElement("link");
+        e.setAttribute("type", "text/css");
+        e.setAttribute("rel", "stylesheet");
+        e.setAttribute("href", f);
+        e.setAttribute("class", l);
+        document.body.appendChild(e)
+    }
+ 
+    function h() {
+        var e = document.getElementsByClassName(l);
+        for (var t = 0; t < e.length; t++) {
+            document.body.removeChild(e[t])
+        }
+    }
+ 
+    function p() {
+        var e = document.createElement("div");
+        e.setAttribute("class", a);
+        document.body.appendChild(e);
+        setTimeout(function() {
+            document.body.removeChild(e)
+        }, 100)
+    }
+ 
+    function d(e) {
+        return {
+            height : e.offsetHeight,
+            width : e.offsetWidth
+        }
+    }
+ 
+    function v(i) {
+        var s = d(i);
+        return s.height > e && s.height < n && s.width > t && s.width < r
+    }
+ 
+    function m(e) {
+        var t = e;
+        var n = 0;
+        while (!!t) {
+            n += t.offsetTop;
+            t = t.offsetParent
+        }
+        return n
+    }
+ 
+    function g() {
+        var e = document.documentElement;
+        if (!!window.innerWidth) {
+            return window.innerHeight
+        } else if (e && !isNaN(e.clientHeight)) {
+            return e.clientHeight
+        }
+        return 0
+    }
+ 
+    function y() {
+        if (window.pageYOffset) {
+            return window.pageYOffset
+        }
+        return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+    }
+ 
+    function E(e) {
+        var t = m(e);
+        return t >= w && t <= b + w
+    }
+
+    function S() {
+        var e = document.getElementById("audio_element_id");
+        if(e != null){
+            var index = parseInt(e.getAttribute("curSongIndex"));
+            if(index > songs.length - 2) {
+                index = 0;
+            } else {
+                index++;
+            }
+            e.setAttribute("curSongIndex", index);
+            N();
+        }
+
+        e.src = i;
+        e.play()
+    }
+ 
+    function x(e) {
+        e.className += " " + s + " " + o
+    }
+ 
+    function T(e) {
+        e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+    }
+ 
+    function N() {
+        var e = document.getElementsByClassName(s);
+        var t = new RegExp("\\b" + s + "\\b");
+        for (var n = 0; n < e.length; ) {
+            e[n].className = e[n].className.replace(t, "")
+        }
+    }
+
+    function initAudioEle() {
+        var e = document.getElementById("audio_element_id");
+        if(e === null){
+            e = document.createElement("audio");
+            e.setAttribute("class", l);
+            e.setAttribute("curSongIndex", 0);
+            e.id = "audio_element_id";
+            e.loop = false;
+            e.bgcolor = 0;
+            e.addEventListener("canplay", function() {
+            setTimeout(function() {
+                x(k)
+            }, 500);
+            setTimeout(function() {
+                N();
+                p();
+                for (var e = 0; e < O.length; e++) {
+                    T(O[e])
+                }
+            }, 15500)
+        }, true);
+        e.addEventListener("ended", function() {
+            N();
+            h();
+            go();
+        }, true);
+        e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+        document.body.appendChild(e);
+        }
+    }
+    
+    initAudioEle();
+    var e = 30;
+    var t = 30;
+    var n = 350;
+    var r = 350;
+
+    var curSongIndex = parseInt(document.getElementById("audio_element_id").getAttribute("curSongIndex"));
+    var i = songs[curSongIndex];
+    
+    var s = "mw-harlem_shake_me";
+    var o = "im_first";
+    var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+    var a = "mw-strobe_light";
+
+    /* harlem-shake-style.css，替换成你的位置，也可以直接使用：//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css */
+    var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+    
+    var l = "mw_added_css";
+    var b = g();
+    var w = y();
+    var C = document.getElementsByTagName("*");
+    var k = null;
+    for (var L = 0; L < C.length; L++) {
+        var A = C[L];
+        if (v(A)) {
+            if (E(A)) {
+                k = A;
+                break
+            }
+        }
+    }
+    if (A === null) {
+        console.warn("Could not find a node of the right size. Please try a different page.");
+        return
+    }
+    c();
+    S();
+    var O = [];
+    for (var L = 0; L < C.length; L++) {
+        var A = C[L];
+        if (v(A)) {
+            O.push(A)
+        }
+    }
+    })()"><i class="menu-item-icon fa fa-music fa-fw"></i>High一下</a> </li>
+      <!-- end High一下 -->
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope="" itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                WPF&C#: Connect to Sql Server
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2018-07-28T13:32:04+02:00" content="2018-07-28">
+              2018-07-28
+            </time>
+          </span>
+
+          
+            <span class="post-category">
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope="" itemtype="https://schema.org/Thing">
+                  <a href="/categories/C/" itemprop="url" rel="index">
+                    <span itemprop="name">C#</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2018/07/28/WPF-C-Connect-to-Sql-Server/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/07/28/WPF-C-Connect-to-Sql-Server/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Check-the-Connect"><a href="#Check-the-Connect" class="headerlink" title="Check the Connect"></a>Check the Connect</h1><p>Input ServerName, DatabaseName, UserName and Password, then click a button, it should show the connetion message.</p>
+<p>In this part, i designed a login windows, user need input their ServerName, DatabaseName, UserName and Password, then click login button, it will call the following function, give connsql the four values, then make the connection.<br><a id="more"></a><br>Before this function, a static global variable is already declared, after login click, the textbox will give these variable a value, then they other file can call these value in the whole soultion.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">//Static Global Variable</span><br><span class="line">static class LoginInfo</span><br><span class="line">&#123;</span><br><span class="line">    public static string ServerName;</span><br><span class="line">    public static string DatabaseName;</span><br><span class="line">    public static string UserNameLogin;</span><br><span class="line">    public static string LoginPassword;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">private void sLoginButton_Click(object sender, RoutedEventArgs e)</span><br><span class="line">&#123;</span><br><span class="line">    String connsql = &quot;Data Source=&quot; + sSververNameText.Text + &quot;; Initial Catalog=&quot;+ sDatabaseText.Text +&quot;; Integrated Security=False;User ID=&quot;+ sUserNameText.Text +&quot;; Password=&quot;+ sPasswordText.Text+&quot;&quot;;</span><br><span class="line">    SqlConnection conn = new SqlConnection(connsql);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    string sql = &quot;select count(*) from UniMail_AccountInfoSave&quot;;</span><br><span class="line">    SqlCommand com = new SqlCommand(sql, conn);</span><br><span class="line">    try</span><br><span class="line">    &#123;</span><br><span class="line">        conn.Open();</span><br><span class="line"></span><br><span class="line">        //Give The Static Global Variable a Value</span><br><span class="line">        LoginInfo.ServerName = sSververNameText.Text;</span><br><span class="line">        LoginInfo.DatabaseName = sDatabaseText.Text;</span><br><span class="line">        LoginInfo.UserNameLogin = sUserNameText.Text;</span><br><span class="line">        LoginInfo.LoginPassword = sPasswordText.Text;</span><br><span class="line"></span><br><span class="line">        MessageBoxResult result = MessageBox.Show(&quot;Database Connected&quot;, &quot;DinCare File Import&quot;, MessageBoxButton.OK, MessageBoxImage.Information);</span><br><span class="line">        if (result == MessageBoxResult.OK)</span><br><span class="line">        &#123;</span><br><span class="line">            MainWindow MainWindowShow = new MainWindow();</span><br><span class="line">            MainWindowShow.ShowDialog();</span><br><span class="line">            this.Close();</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">        else</span><br><span class="line">        &#123;</span><br><span class="line">            return;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    catch (Exception)</span><br><span class="line">    &#123;</span><br><span class="line">        MessageBox.Show(&quot;Database Can not Connect, Please Try again!&quot;);</span><br><span class="line">            </span><br><span class="line">    &#125;</span><br><span class="line">    finally</span><br><span class="line">    &#123;</span><br><span class="line">        conn.Close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>Here is the xaml file<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Grid</span> <span class="attr">Background</span>=<span class="string">"#383838"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Label</span> <span class="attr">Content</span>=<span class="string">"Server Name"</span> <span class="attr">FontSize</span>=<span class="string">"18"</span> <span class="attr">Foreground</span>=<span class="string">"White"</span> <span class="attr">FontWeight</span>=<span class="string">"Normal"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Left"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Top"</span> <span class="attr">Margin</span>=<span class="string">"82,140,0,0"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Label</span> <span class="attr">Content</span>=<span class="string">"Database"</span> <span class="attr">FontSize</span>=<span class="string">"18"</span> <span class="attr">Foreground</span>=<span class="string">"White"</span> <span class="attr">FontWeight</span>=<span class="string">"Normal"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Left"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Top"</span> <span class="attr">Margin</span>=<span class="string">"82,200,0,0"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Label</span> <span class="attr">Content</span>=<span class="string">"User Name"</span> <span class="attr">FontSize</span>=<span class="string">"18"</span> <span class="attr">Foreground</span>=<span class="string">"White"</span> <span class="attr">FontWeight</span>=<span class="string">"Normal"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Left"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Top"</span> <span class="attr">Margin</span>=<span class="string">"82,260,0,0"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Label</span> <span class="attr">Content</span>=<span class="string">"Password"</span> <span class="attr">FontSize</span>=<span class="string">"18"</span> <span class="attr">Foreground</span>=<span class="string">"White"</span> <span class="attr">FontWeight</span>=<span class="string">"Normal"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Left"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Top"</span> <span class="attr">Margin</span>=<span class="string">"82,320,0,0"</span>/&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">TextBox</span> <span class="attr">Name</span>=<span class="string">"sSververNameText"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Left"</span> <span class="attr">TextAlignment</span>=<span class="string">"Center"</span> <span class="attr">Height</span>=<span class="string">"34"</span> <span class="attr">FontSize</span>=<span class="string">"15"</span> <span class="attr">Margin</span>=<span class="string">"244,140,0,0"</span> <span class="attr">TextWrapping</span>=<span class="string">"Wrap"</span> <span class="attr">Text</span>=<span class="string">"localhost"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Top"</span> <span class="attr">Width</span>=<span class="string">"151"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">TextBox</span> <span class="attr">x:Name</span>=<span class="string">"sDatabaseText"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Left"</span> <span class="attr">TextAlignment</span>=<span class="string">"Center"</span> <span class="attr">Height</span>=<span class="string">"34"</span> <span class="attr">FontSize</span>=<span class="string">"15"</span> <span class="attr">Margin</span>=<span class="string">"244,200,0,0"</span> <span class="attr">TextWrapping</span>=<span class="string">"Wrap"</span> <span class="attr">Text</span>=<span class="string">"UniMail_Milano"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Top"</span> <span class="attr">Width</span>=<span class="string">"151"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">TextBox</span> <span class="attr">x:Name</span>=<span class="string">"sUserNameText"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Left"</span> <span class="attr">TextAlignment</span>=<span class="string">"Center"</span> <span class="attr">Height</span>=<span class="string">"34"</span> <span class="attr">FontSize</span>=<span class="string">"15"</span> <span class="attr">Margin</span>=<span class="string">"244,260,0,0"</span> <span class="attr">TextWrapping</span>=<span class="string">"Wrap"</span> <span class="attr">Text</span>=<span class="string">"sa"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Top"</span> <span class="attr">Width</span>=<span class="string">"151"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">TextBox</span> <span class="attr">x:Name</span>=<span class="string">"sPasswordText"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Left"</span> <span class="attr">TextAlignment</span>=<span class="string">"Center"</span> <span class="attr">Height</span>=<span class="string">"34"</span> <span class="attr">FontSize</span>=<span class="string">"15"</span> <span class="attr">Margin</span>=<span class="string">"244,320,0,0"</span> <span class="attr">TextWrapping</span>=<span class="string">"Wrap"</span> <span class="attr">Text</span>=<span class="string">"DinCare2018"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Top"</span> <span class="attr">Width</span>=<span class="string">"151"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Name</span>=<span class="string">"sLoginButton"</span> <span class="attr">Content</span>=<span class="string">"Sign In"</span> <span class="attr">Background</span>=<span class="string">"#595656"</span> <span class="attr">Foreground</span>=<span class="string">"White"</span> <span class="attr">FontSize</span>=<span class="string">"20"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Left"</span> <span class="attr">Margin</span>=<span class="string">"244,393,0,0"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Top"</span> <span class="attr">Width</span>=<span class="string">"151"</span> <span class="attr">Height</span>=<span class="string">"52"</span> <span class="attr">Click</span>=<span class="string">"sLoginButton_Click"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Name</span>=<span class="string">"sRegisterButton"</span> <span class="attr">Content</span>=<span class="string">"Register"</span> <span class="attr">Background</span>=<span class="string">"#595656"</span> <span class="attr">Foreground</span>=<span class="string">"White"</span> <span class="attr">FontSize</span>=<span class="string">"20"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Left"</span> <span class="attr">Margin</span>=<span class="string">"82,393,0,0"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Top"</span> <span class="attr">Width</span>=<span class="string">"151"</span> <span class="attr">Height</span>=<span class="string">"52"</span> <span class="attr">Click</span>=<span class="string">"sRegisterButton_Click"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Label</span> <span class="attr">Content</span>=<span class="string">"User"</span> <span class="attr">FontSize</span>=<span class="string">"18"</span> <span class="attr">Foreground</span>=<span class="string">"White"</span> <span class="attr">FontWeight</span>=<span class="string">"Normal"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Left"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Top"</span> <span class="attr">Margin</span>=<span class="string">"82,78,0,0"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ComboBox</span> <span class="attr">Name</span>=<span class="string">"UserComboBoxSelector"</span> <span class="attr">SelectionChanged</span>=<span class="string">"UserComboBoxSelector_SelectionChanged"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Left"</span> <span class="attr">Margin</span>=<span class="string">"244,78,0,0"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Top"</span> <span class="attr">FontSize</span>=<span class="string">"15"</span> <span class="attr">Width</span>=<span class="string">"151"</span> <span class="attr">Height</span>=<span class="string">"34"</span>/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">Grid</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>If database connected, and you click ok, it will open the Mainwindow and close the login window(now it only can hide, a little bug), if database can not connect, it will show “Database Can not Connect, Please Try again!” .</p>
+<p>Anyway, at the end, it need close the connection.</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/C/" rel="tag">#C#</a>
+          
+            <a href="/tags/WPF/" rel="tag">#WPF</a>
+          
+            <a href="/tags/SqlServer/" rel="tag">#SqlServer</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/09/14/Make-an-Apple-Official-Website/" rel="next" title="Make an Apple Official Website">
+                <i class="fa fa-chevron-left"></i> Make an Apple Official Website
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/08/04/Show-the-Database-Data-in-Combobox/" rel="prev" title="Show the Database Data in Combobox">
+                Show the Database Data in Combobox <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2018/07/28/WPF-C-Connect-to-Sql-Server/" data-title="WPF&C#: Connect to Sql Server" data-url="http://clovel.cn/2018/07/28/WPF-C-Connect-to-Sql-Server/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="/images/logo.JPG" alt="Cheng Wang">
+          <p class="site-author-name" itemprop="name">Cheng Wang</p>
+          <p class="site-description motion-element" itemprop="description">Start From Zero</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">14</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">categories</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">27</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/chengw1121" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/wangcheng1121" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.facebook.com/cheng.wang.5055233" target="_blank" title="Facebook">
+                  
+                    <i class="fa fa-fw fa-facebook"></i>
+                  
+                  Facebook
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons">
+            </a>
+          </div>
+        
+
+        
+        
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Check-the-Connect"><span class="nav-number">1.</span> <span class="nav-text">Check the Connect</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+      <!-- hack一个虚线出来 -->
+      <section style="border-top:1px dotted #ccc;height:10px;"></section>
+      <!-- weibo show -->
+      <iframe width="100%" height="550" class="share_self" frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=120&fansRow=2&ptype=1&speed=0&skin=5&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=2177694017&verifier=24dcfc20&dpc=1"></iframe>
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        
+
+        <div class="copyright">
+  
+  &copy;  2017 - 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Cheng Wang</span>
+</div>
+
+
+
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"clovec"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//neveryu.github.io/js/src/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementById('footer')
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  <!-- 按需加载背景 -->
+  <!-- 识别手机或电脑的js开始 -->  
+  <script type="text/javascript">   
+  (function(){  
+    var res = GetRequest();  
+    var par = res['index'];  
+    if(par!='gfan'){  
+      var ua=navigator.userAgent.toLowerCase();  
+      var contains=function (a, b){  
+          if(a.indexOf(b)!=-1){return true;}  
+      };   
+      if((contains(ua,"android") && contains(ua,"mobile"))||(contains(ua,"android") && contains(ua,"mozilla"))||(contains(ua,"android") && contains(ua,"opera"))||contains(ua,"ucweb7")||contains(ua,"iphone")){
+        return false;
+      } else {
+        $.getScript("/js/src/particle.js");
+      }
+    }  
+  })();  
+  function GetRequest() {  
+    var url = location.search;
+    var theRequest = new Object();  
+    if (url.indexOf("?") != -1) {  
+      var str = url.substr(1);  
+      strs = str.split("&");  
+      for(var i = 0; i < strs.length; i ++) {  
+        theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);  
+      }  
+    }  
+    return theRequest;  
+  }  
+  </script>  
+  <!-- 识别手机或电脑的js结束 -->  
+
+  <!-- 背景动画 -->
+  <!-- <script type="text/javascript" src="/js/src/particle.js"></script> -->
+  <!-- 页面点击小红心 -->
+  <!-- <script type="text/javascript" src="/js/src/love.js"></script> -->
+
+</body>
+</html>
