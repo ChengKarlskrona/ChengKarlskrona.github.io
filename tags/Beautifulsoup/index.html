@@ -87,7 +87,7 @@
 <meta name="description" content="Start From Zero">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Code_Cheng Site">
-<meta property="og:url" content="http://clovel.cn/tags/BeautifulSoup/index.html">
+<meta property="og:url" content="http://clovel.cn/tags/Beautifulsoup/index.html">
 <meta property="og:site_name" content="Code_Cheng Site">
 <meta property="og:description" content="Start From Zero">
 <meta property="og:locale" content="en">
@@ -114,9 +114,9 @@
 
 
 
-  <link rel="canonical" href="http://clovel.cn/tags/BeautifulSoup/"/>
+  <link rel="canonical" href="http://clovel.cn/tags/Beautifulsoup/"/>
 
-  <title> Tag: BeautifulSoup | Code_Cheng Site </title>
+  <title> Tag: Beautifulsoup | Code_Cheng Site </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -446,7 +446,7 @@
   <div id="posts" class="posts-collapse">
     <div class="collection-title">
       <h2 >
-        BeautifulSoup
+        Beautifulsoup
         <small>Tag</small>
       </h2>
     </div>
@@ -459,37 +459,9 @@
 
       <h1 class="post-title">
         
-            <a class="post-title-link" href="/2017/04/01/Practice-3_-Scrapying-58-Web-Site-List-And-Detail/" itemprop="url">
+            <a class="post-title-link" href="/2017/03/27/Practice-1_-Tripadvisor-Attractions-Scapying-with-Python/" itemprop="url">
               
-                <span itemprop="name">Practice3: Scrapying 58 WebSite List And Detail</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-04-01T21:59:24+02:00"
-              content="2017-04-01" >
-          04-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/03/31/Practice-2_-Download-Scarlett-Pictures-From-WeHeartit-With-Python/" itemprop="url">
-              
-                <span itemprop="name">Practice2：Download Scarlet Witch's Picture From WeHeartit WebSite</span>
+                <span itemprop="name">Practice1：Tripadvisor Attractions Scapying with Python</span>
               
             </a>
         
@@ -497,9 +469,9 @@
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-31T23:01:52+02:00"
-              content="2017-03-31" >
-          03-31
+              datetime="2017-03-27T22:31:41+02:00"
+              content="2017-03-27" >
+          03-27
         </time>
       </div>
 
@@ -549,7 +521,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">13</span>
+              <span class="site-state-item-count">14</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -557,7 +529,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">categories</span>
               </a>
             </div>
@@ -566,7 +538,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">27</span>
+                <span class="site-state-item-count">29</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>
@@ -774,6 +746,33 @@
       if((contains(ua,"android") && contains(ua,"mobile"))||(contains(ua,"android") && contains(ua,"mozilla"))||(contains(ua,"android") && contains(ua,"opera"))||contains(ua,"ucweb7")||contains(ua,"iphone")){
         return false;
       } else {
+        $.getScript("/js/src/particle.js");
+      }
+    }  
+  })();  
+  function GetRequest() {  
+    var url = location.search;
+    var theRequest = new Object();  
+    if (url.indexOf("?") != -1) {  
+      var str = url.substr(1);  
+      strs = str.split("&");  
+      for(var i = 0; i < strs.length; i ++) {  
+        theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);  
+      }  
+    }  
+    return theRequest;  
+  }  
+  </script>  
+  <!-- 识别手机或电脑的js结束 -->  
+
+  <!-- 背景动画 -->
+  <!-- <script type="text/javascript" src="/js/src/particle.js"></script> -->
+  <!-- 页面点击小红心 -->
+  <!-- <script type="text/javascript" src="/js/src/love.js"></script> -->
+
+</body>
+</html>
+ {
         $.getScript("/js/src/particle.js");
       }
     }  
