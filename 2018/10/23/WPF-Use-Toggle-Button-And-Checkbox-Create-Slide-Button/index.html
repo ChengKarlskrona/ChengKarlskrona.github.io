@@ -1,90 +1,14 @@
-<!doctype html>
-
-
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="baidu-site-verification" content="9dtmr2U4H5" />
+        <meta name="google-site-verification" content="x6k7knkmpTCLh6kFNs3JZVS6wUmetVakl9PNI3qMT_0" />
+  <meta charset="utf-8">
   
-
-
-<html class="theme-next mist use-motion">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="WPF,ToggleButton,Checkbox," />
-
-
-
-
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
-
-
-
-
-
-
-<meta name="description" content="Slide Button Use ToogleButtonThe rendering for toggle button is:">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>WPF--Use Toggle Button And Checkbox Create Slide Button | Code_Cheng Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Slide Button Use ToogleButtonThe rendering for toggle button is:">
 <meta name="keywords" content="WPF,ToggleButton,Checkbox">
 <meta property="og:type" content="article">
 <meta property="og:title" content="WPF--Use Toggle Button And Checkbox Create Slide Button">
@@ -99,822 +23,445 @@
 <meta name="twitter:title" content="WPF--Use Toggle Button And Checkbox Create Slide Button">
 <meta name="twitter:description" content="Slide Button Use ToogleButtonThe rendering for toggle button is:">
 <meta name="twitter:image" content="http://clovel.cn/images/ToggleButton.png">
-
-
-
-<script type="text/javascript" id="hexo.configuration">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    scheme: 'Mist',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
-    fancybox: true,
-    motion: true,
-    duoshuo: {
-      userId: 0,
-      author: 'Author'
-    }
-  };
-</script>
-
-
-
-
-  <link rel="canonical" href="http://clovel.cn/2018/10/23/WPF-Use-Toggle-Button-And-Checkbox-Create-Slide-Button/"/>
-
-  <title> WPF--Use Toggle Button And Checkbox Create Slide Button | Code_Cheng Site </title>
+  
+    <link rel="alternative" href="/atom.xml" title="Code_Cheng Site" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="/img/photo.jpg" class="js-avatar">
+			
+		</a>
 
-  
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Cheng Wang</a></h1>
+		</hgroup>
 
+		
+		<p class="header-subtitle">python | html5 | javascript | database | Everything I Want</p>
+		
 
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>Menu</li>
+						<li>Tags</li>
+						
+						<li>Links</li>
+						
+						
+						<li>About</li>
+						
+					</ul>
+				</div>
+			</div>
+		
 
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">Homepage</a></li>
+				        
+							<li><a href="/categories/notes">Notes</a></li>
+				        
+							<li><a href="/categories/python">Python</a></li>
+				        
+							<li><a href="/categories/html">Html</a></li>
+				        
+							<li><a href="/archives">All Article</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/WangChengAction" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://weibo.com/wc1121" title="weibo">weibo</a>
+					        
+								<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/wang-cheng-19-62" title="zhihu">zhihu</a>
+					        
+								<a class="mail" target="_blank" href="/378716031@qq.com" title="mail">mail</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/BeautifulSoup/" style="font-size: 13.33px;">BeautifulSoup</a> <a href="/tags/Beautifulsoup/" style="font-size: 10px;">Beautifulsoup</a> <a href="/tags/C/" style="font-size: 13.33px;">C#</a> <a href="/tags/Checkbox/" style="font-size: 10px;">Checkbox</a> <a href="/tags/Combobox/" style="font-size: 10px;">Combobox</a> <a href="/tags/Download/" style="font-size: 10px;">Download</a> <a href="/tags/Python/" style="font-size: 16.67px;">Python</a> <a href="/tags/Software-Engineering/" style="font-size: 10px;">Software Engineering</a> <a href="/tags/SqlServer/" style="font-size: 13.33px;">SqlServer</a> <a href="/tags/ToggleButton/" style="font-size: 10px;">ToggleButton</a> <a href="/tags/UWP/" style="font-size: 10px;">UWP</a> <a href="/tags/Urllib/" style="font-size: 10px;">Urllib</a> <a href="/tags/Urlretrieve/" style="font-size: 10px;">Urlretrieve</a> <a href="/tags/VSM/" style="font-size: 10px;">VSM</a> <a href="/tags/WPF/" style="font-size: 16.67px;">WPF</a> <a href="/tags/Webapp/" style="font-size: 10px;">Webapp</a> <a href="/tags/djongo/" style="font-size: 10px;">djongo</a> <a href="/tags/encoding/" style="font-size: 10px;">encoding</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/python/" style="font-size: 20px;">python</a> <a href="/tags/requests/" style="font-size: 13.33px;">requests</a> <a href="/tags/scraping/" style="font-size: 13.33px;">scraping</a> <a href="/tags/semantic/" style="font-size: 10px;">semantic</a> <a href="/tags/software-testing/" style="font-size: 10px;">software testing</a> <a href="/tags/sonarqube/" style="font-size: 10px;">sonarqube</a> <a href="/tags/static-analsis/" style="font-size: 10px;">static analsis</a> <a href="/tags/urllib/" style="font-size: 10px;">urllib</a> <a href="/tags/utf-8/" style="font-size: 10px;">utf-8</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://github.com/WangChengAction">我的github</a>
+			        
+			        </div>
+				</section>
+				
 
-
-
-
-
-
-
-  
-  
-    
-  
-
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
-
-  <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Code_Cheng Site</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-  </div>
-  <p class="site-subtitle">python | html5 | javascript | database | Everything I Want</p>
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">BTH software engineering master, interested in running, coding and listening</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
 </div>
 
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
-</div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            Home
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            Categories
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            Archives
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            Tags
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-commonweal">
-          <a href="/404.html" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
-            
-            Commonweal 404
-          </a>
-        </li>
-      
-
-      
-
-      <!-- 自定义High一下的功能 -->
-      <li class="menu-item"> <a title="把这个链接拖到你的工具栏中,任何网页都可以High" href='javascript:(
-    /*
-     * Copyright (C) 2016 Never_yu (Neveryu.github.io) <React.dong.yu@gmail.com>
-     * Sina Weibo (http://weibo.com/Neveryu)
-     *
-     * Licensed under the Apache License, Version 2.0 (the "License");
-     * you may not use this file except in compliance with the License.
-     * You may obtain a copy of the License at
-     *
-     *      http://www.apache.org/licenses/LICENSE-2.0
-     *
-     * Unless required by applicable law or agreed to in writing, software
-     * distributed under the License is distributed on an "AS IS" BASIS,
-     * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     * See the License for the specific language governing permissions and
-     * limitations under the License.
-     */
-    function go() {
-
-
-    var songs = [
-                "http://bdyun.65dj.com:8090/2015/06/28/84791C997D8C55023DAD0D5690E48C28/%D1%A6%D6%AE%C7%AB%20-%20%D1%DD%D4%B1.mp3",
-                "http://7xoiki.com1.z0.glb.clouddn.com/Music-sunburst.mp3",
-                ""
-    ];
-
-    
-    function c() {
-        var e = document.createElement("link");
-        e.setAttribute("type", "text/css");
-        e.setAttribute("rel", "stylesheet");
-        e.setAttribute("href", f);
-        e.setAttribute("class", l);
-        document.body.appendChild(e)
-    }
- 
-    function h() {
-        var e = document.getElementsByClassName(l);
-        for (var t = 0; t < e.length; t++) {
-            document.body.removeChild(e[t])
-        }
-    }
- 
-    function p() {
-        var e = document.createElement("div");
-        e.setAttribute("class", a);
-        document.body.appendChild(e);
-        setTimeout(function() {
-            document.body.removeChild(e)
-        }, 100)
-    }
- 
-    function d(e) {
-        return {
-            height : e.offsetHeight,
-            width : e.offsetWidth
-        }
-    }
- 
-    function v(i) {
-        var s = d(i);
-        return s.height > e && s.height < n && s.width > t && s.width < r
-    }
- 
-    function m(e) {
-        var t = e;
-        var n = 0;
-        while (!!t) {
-            n += t.offsetTop;
-            t = t.offsetParent
-        }
-        return n
-    }
- 
-    function g() {
-        var e = document.documentElement;
-        if (!!window.innerWidth) {
-            return window.innerHeight
-        } else if (e && !isNaN(e.clientHeight)) {
-            return e.clientHeight
-        }
-        return 0
-    }
- 
-    function y() {
-        if (window.pageYOffset) {
-            return window.pageYOffset
-        }
-        return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
-    }
- 
-    function E(e) {
-        var t = m(e);
-        return t >= w && t <= b + w
-    }
-
-    function S() {
-        var e = document.getElementById("audio_element_id");
-        if(e != null){
-            var index = parseInt(e.getAttribute("curSongIndex"));
-            if(index > songs.length - 2) {
-                index = 0;
-            } else {
-                index++;
-            }
-            e.setAttribute("curSongIndex", index);
-            N();
-        }
-
-        e.src = i;
-        e.play()
-    }
- 
-    function x(e) {
-        e.className += " " + s + " " + o
-    }
- 
-    function T(e) {
-        e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
-    }
- 
-    function N() {
-        var e = document.getElementsByClassName(s);
-        var t = new RegExp("\\b" + s + "\\b");
-        for (var n = 0; n < e.length; ) {
-            e[n].className = e[n].className.replace(t, "")
-        }
-    }
-
-    function initAudioEle() {
-        var e = document.getElementById("audio_element_id");
-        if(e === null){
-            e = document.createElement("audio");
-            e.setAttribute("class", l);
-            e.setAttribute("curSongIndex", 0);
-            e.id = "audio_element_id";
-            e.loop = false;
-            e.bgcolor = 0;
-            e.addEventListener("canplay", function() {
-            setTimeout(function() {
-                x(k)
-            }, 500);
-            setTimeout(function() {
-                N();
-                p();
-                for (var e = 0; e < O.length; e++) {
-                    T(O[e])
-                }
-            }, 15500)
-        }, true);
-        e.addEventListener("ended", function() {
-            N();
-            h();
-            go();
-        }, true);
-        e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
-        document.body.appendChild(e);
-        }
-    }
-    
-    initAudioEle();
-    var e = 30;
-    var t = 30;
-    var n = 350;
-    var r = 350;
-
-    var curSongIndex = parseInt(document.getElementById("audio_element_id").getAttribute("curSongIndex"));
-    var i = songs[curSongIndex];
-    
-    var s = "mw-harlem_shake_me";
-    var o = "im_first";
-    var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
-    var a = "mw-strobe_light";
-
-    /* harlem-shake-style.css，替换成你的位置，也可以直接使用：//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css */
-    var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
-    
-    var l = "mw_added_css";
-    var b = g();
-    var w = y();
-    var C = document.getElementsByTagName("*");
-    var k = null;
-    for (var L = 0; L < C.length; L++) {
-        var A = C[L];
-        if (v(A)) {
-            if (E(A)) {
-                k = A;
-                break
-            }
-        }
-    }
-    if (A === null) {
-        console.warn("Could not find a node of the right size. Please try a different page.");
-        return
-    }
-    c();
-    S();
-    var O = [];
-    for (var L = 0; L < C.length; L++) {
-        var A = C[L];
-        if (v(A)) {
-            O.push(A)
-        }
-    }
-    })()'><i class="menu-item-icon fa fa-music fa-fw"></i>High一下</a> </li>
-      <!-- end High一下 -->
-    </ul>
-  
-
-  
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Cheng Wang</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="/img/photo.jpg" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Cheng Wang</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">python | html5 | javascript | database | Everything I Want</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">Homepage</a></li>
+		        
+					<li><a href="/categories/notes">Notes</a></li>
+		        
+					<li><a href="/categories/python">Python</a></li>
+		        
+					<li><a href="/categories/html">Html</a></li>
+		        
+					<li><a href="/archives">All Article</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/WangChengAction" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/wc1121" title="weibo">weibo</a>
+			        
+						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/wang-cheng-19-62" title="zhihu">zhihu</a>
+			        
+						<a class="mail" target="_blank" href="/378716031@qq.com" title="mail">mail</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
 </nav>
 
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-
-  <div id="posts" class="posts-expand">
+      <div class="body-wrap"><article id="post-WPF-Use-Toggle-Button-And-Checkbox-Create-Slide-Button" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/10/23/WPF-Use-Toggle-Button-And-Checkbox-Create-Slide-Button/" class="article-date">
+  	<time datetime="2018-10-23T21:02:24.000Z" itemprop="datePublished">2018-10-23</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
     
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
+      <input type="hidden" class="isFancy" />
     
-      <header class="post-header">
-
+    
+      <header class="article-header">
         
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                WPF--Use Toggle Button And Checkbox Create Slide Button
-              
-            
-          </h1>
-        
+  
+    <h1 class="article-title" itemprop="name">
+      WPF--Use Toggle Button And Checkbox Create Slide Button
+    </h1>
+  
 
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2018-10-23T23:02:24+02:00" content="2018-10-23">
-              2018-10-23
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/WPF/" itemprop="url" rel="index">
-                    <span itemprop="name">WPF</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2018/10/23/WPF-Use-Toggle-Button-And-Checkbox-Create-Slide-Button/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/10/23/WPF-Use-Toggle-Button-And-Checkbox-Create-Slide-Button/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
       </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Checkbox/">Checkbox</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ToggleButton/">ToggleButton</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/WPF/">WPF</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/WPF/">WPF</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
     
-
-
-    <div class="post-body" itemprop="articleBody">
-
+    <div class="article-entry" itemprop="articleBody">
       
-      
-
-      
-        <h1 id="Slide-Button-Use-ToogleButton"><a href="#Slide-Button-Use-ToogleButton" class="headerlink" title="Slide Button Use ToogleButton"></a>Slide Button Use ToogleButton</h1><p>The rendering for toggle button is:<br><img style="float: Left;" src="/images/ToggleButton.png" width="500" height="300"><br><br><br><a id="more"></a><br><!--0--><br>The Xaml code is the following:<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">LinearGradientBrush</span> <span class="attr">x:Key</span>=<span class="string">"ButtonNormalBackgroundFill"</span> <span class="attr">EndPoint</span>=<span class="string">"0.5,1"</span> <span class="attr">StartPoint</span>=<span class="string">"0.5,0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">GradientStop</span> <span class="attr">Color</span>=<span class="string">"#FFFFFFFF"</span> <span class="attr">Offset</span>=<span class="string">"0"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">GradientStop</span> <span class="attr">Color</span>=<span class="string">"#FFF0F0EA"</span> <span class="attr">Offset</span>=<span class="string">"0.9"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">LinearGradientBrush</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">SolidColorBrush</span> <span class="attr">x:Key</span>=<span class="string">"ButtonBorder"</span> <span class="attr">Color</span>=<span class="string">"#FF003C74"</span>/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">Style</span> <span class="attr">x:Key</span>=<span class="string">"ToggleButtonStyle1"</span> <span class="attr">TargetType</span>=<span class="string">"&#123;x:Type ToggleButton&#125;"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"FocusVisualStyle"</span> <span class="attr">Value</span>=<span class="string">"&#123;x:Null&#125;"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"Background"</span> <span class="attr">Value</span>=<span class="string">"&#123;StaticResource ButtonNormalBackgroundFill&#125;"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"BorderBrush"</span> <span class="attr">Value</span>=<span class="string">"&#123;StaticResource ButtonBorder&#125;"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"Foreground"</span> <span class="attr">Value</span>=<span class="string">"&#123;DynamicResource &#123;x:Static SystemColors.ControlTextBrushKey&#125;&#125;"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"HorizontalContentAlignment"</span> <span class="attr">Value</span>=<span class="string">"Center"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"VerticalContentAlignment"</span> <span class="attr">Value</span>=<span class="string">"Center"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"Template"</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">Setter.Value</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">ControlTemplate</span> <span class="attr">TargetType</span>=<span class="string">"&#123;x:Type ToggleButton&#125;"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">ControlTemplate.Resources</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;<span class="name">Storyboard</span> <span class="attr">x:Key</span>=<span class="string">"OnUnchecked1"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">ThicknessAnimationUsingKeyFrames</span> <span class="attr">Storyboard.TargetProperty</span>=<span class="string">"(FrameworkElement.Margin)"</span> <span class="attr">Storyboard.TargetName</span>=<span class="string">"path"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingThicknessKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0"</span> <span class="attr">Value</span>=<span class="string">"-60,0,0,0"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingThicknessKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0:0:0.5"</span> <span class="attr">Value</span>=<span class="string">"0"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">ThicknessAnimationUsingKeyFrames</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">ThicknessAnimationUsingKeyFrames</span> <span class="attr">Storyboard.TargetProperty</span>=<span class="string">"(FrameworkElement.Margin)"</span> <span class="attr">Storyboard.TargetName</span>=<span class="string">"path1"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingThicknessKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0"</span> <span class="attr">Value</span>=<span class="string">"-60,0,0,0"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingThicknessKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0:0:0.5"</span> <span class="attr">Value</span>=<span class="string">"0"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">ThicknessAnimationUsingKeyFrames</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">ThicknessAnimationUsingKeyFrames</span> <span class="attr">Storyboard.TargetProperty</span>=<span class="string">"(FrameworkElement.Margin)"</span> <span class="attr">Storyboard.TargetName</span>=<span class="string">"path2"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingThicknessKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0"</span> <span class="attr">Value</span>=<span class="string">"-60,0,0,0"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingThicknessKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0:0:0.5"</span> <span class="attr">Value</span>=<span class="string">"0"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">ThicknessAnimationUsingKeyFrames</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">StringAnimationUsingKeyFrames</span> <span class="attr">Storyboard.TargetProperty</span>=<span class="string">"(TextBlock.Text)"</span> <span class="attr">Storyboard.TargetName</span>=<span class="string">"displayText"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">DiscreteStringKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0"</span> <span class="attr">Value</span>=<span class="string">"OFF"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">StringAnimationUsingKeyFrames</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">ColorAnimationUsingKeyFrames</span> <span class="attr">Storyboard.TargetProperty</span>=<span class="string">"(TextElement.Foreground).(SolidColorBrush.Color)"</span> <span class="attr">Storyboard.TargetName</span>=<span class="string">"displayText"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingColorKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0"</span> <span class="attr">Value</span>=<span class="string">"White"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingColorKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0:0:1"</span> <span class="attr">Value</span>=<span class="string">"Red"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">ColorAnimationUsingKeyFrames</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;/<span class="name">Storyboard</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;<span class="name">Storyboard</span> <span class="attr">x:Key</span>=<span class="string">"OnChecked1"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">ThicknessAnimationUsingKeyFrames</span> <span class="attr">Storyboard.TargetProperty</span>=<span class="string">"(FrameworkElement.Margin)"</span> <span class="attr">Storyboard.TargetName</span>=<span class="string">"path"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingThicknessKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0:0:0.5"</span> <span class="attr">Value</span>=<span class="string">"-60,0,0,0"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">ThicknessAnimationUsingKeyFrames</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">ThicknessAnimationUsingKeyFrames</span> <span class="attr">Storyboard.TargetProperty</span>=<span class="string">"(FrameworkElement.Margin)"</span> <span class="attr">Storyboard.TargetName</span>=<span class="string">"path1"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingThicknessKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0:0:0.5"</span> <span class="attr">Value</span>=<span class="string">"-60,0,0,0"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">ThicknessAnimationUsingKeyFrames</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">ThicknessAnimationUsingKeyFrames</span> <span class="attr">Storyboard.TargetProperty</span>=<span class="string">"(FrameworkElement.Margin)"</span> <span class="attr">Storyboard.TargetName</span>=<span class="string">"path2"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingThicknessKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0:0:0.5"</span> <span class="attr">Value</span>=<span class="string">"-60,0,0,0"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">ThicknessAnimationUsingKeyFrames</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">StringAnimationUsingKeyFrames</span> <span class="attr">Storyboard.TargetProperty</span>=<span class="string">"(TextBlock.Text)"</span> <span class="attr">Storyboard.TargetName</span>=<span class="string">"displayText"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">DiscreteStringKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0"</span> <span class="attr">Value</span>=<span class="string">"ON"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">StringAnimationUsingKeyFrames</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">ColorAnimationUsingKeyFrames</span> <span class="attr">Storyboard.TargetProperty</span>=<span class="string">"(TextElement.Foreground).(SolidColorBrush.Color)"</span> <span class="attr">Storyboard.TargetName</span>=<span class="string">"displayText"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingColorKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0"</span> <span class="attr">Value</span>=<span class="string">"White"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingColorKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0:0:1"</span> <span class="attr">Value</span>=<span class="string">"#FF63FA00"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">ColorAnimationUsingKeyFrames</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;/<span class="name">Storyboard</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;/<span class="name">ControlTemplate.Resources</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">Border</span> <span class="attr">CornerRadius</span>=<span class="string">"15"</span> <span class="attr">Background</span>=<span class="string">"#FF3B3939"</span> <span class="attr">Width</span>=<span class="string">"90"</span> <span class="attr">Height</span>=<span class="string">"30"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;<span class="name">Grid</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">x:Name</span>=<span class="string">"displayText"</span> <span class="attr">Text</span>=<span class="string">"OFF"</span> <span class="attr">Foreground</span>=<span class="string">"Red"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Center"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span> &gt;</span><span class="tag">&lt;/<span class="name">TextBlock</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">Path</span> <span class="attr">x:Name</span>=<span class="string">"path2"</span> <span class="attr">Fill</span>=<span class="string">"Black"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">Path.Data</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                <span class="tag">&lt;<span class="name">GeometryGroup</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                    <span class="tag">&lt;<span class="name">GeometryGroup.Children</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                        <span class="tag">&lt;<span class="name">EllipseGeometry</span> <span class="attr">Center</span>=<span class="string">"75,15"</span> <span class="attr">RadiusX</span>=<span class="string">"14"</span> <span class="attr">RadiusY</span>=<span class="string">"14"</span>&gt;</span><span class="tag">&lt;/<span class="name">EllipseGeometry</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                    <span class="tag">&lt;/<span class="name">GeometryGroup.Children</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                <span class="tag">&lt;/<span class="name">GeometryGroup</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;/<span class="name">Path.Data</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">Path</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">Path</span> <span class="attr">x:Name</span>=<span class="string">"path1"</span> <span class="attr">Fill</span>=<span class="string">"#FF818080"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">Path.Data</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                <span class="tag">&lt;<span class="name">GeometryGroup</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                    <span class="tag">&lt;<span class="name">GeometryGroup.Children</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                        <span class="tag">&lt;<span class="name">EllipseGeometry</span> <span class="attr">Center</span>=<span class="string">"75,15"</span> <span class="attr">RadiusX</span>=<span class="string">"14"</span> <span class="attr">RadiusY</span>=<span class="string">"14"</span>&gt;</span><span class="tag">&lt;/<span class="name">EllipseGeometry</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                    <span class="tag">&lt;/<span class="name">GeometryGroup.Children</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                <span class="tag">&lt;/<span class="name">GeometryGroup</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;/<span class="name">Path.Data</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">Path</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">Path</span> <span class="attr">x:Name</span>=<span class="string">"path"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">Path.Fill</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                <span class="tag">&lt;<span class="name">LinearGradientBrush</span> <span class="attr">EndPoint</span>=<span class="string">"0.5,1"</span> <span class="attr">StartPoint</span>=<span class="string">"0.5,0"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                    <span class="tag">&lt;<span class="name">GradientStop</span> <span class="attr">Color</span>=<span class="string">"#FF807F7F"</span> <span class="attr">Offset</span>=<span class="string">"0"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                                    <span class="tag">&lt;<span class="name">GradientStop</span> <span class="attr">Color</span>=<span class="string">"#FF373636"</span> <span class="attr">Offset</span>=<span class="string">"1"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                                <span class="tag">&lt;/<span class="name">LinearGradientBrush</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;/<span class="name">Path.Fill</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">Path.Data</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                <span class="tag">&lt;<span class="name">GeometryGroup</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                    <span class="tag">&lt;<span class="name">GeometryGroup.Children</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                        <span class="tag">&lt;<span class="name">EllipseGeometry</span> <span class="attr">Center</span>=<span class="string">"75,15"</span> <span class="attr">RadiusX</span>=<span class="string">"14"</span> <span class="attr">RadiusY</span>=<span class="string">"14"</span>&gt;</span><span class="tag">&lt;/<span class="name">EllipseGeometry</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                    <span class="tag">&lt;/<span class="name">GeometryGroup.Children</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                <span class="tag">&lt;/<span class="name">GeometryGroup</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;/<span class="name">Path.Data</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">Path</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;/<span class="name">Grid</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">ControlTemplate.Triggers</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;<span class="name">EventTrigger</span> <span class="attr">RoutedEvent</span>=<span class="string">"ToggleButton.Unchecked"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">BeginStoryboard</span> <span class="attr">x:Name</span>=<span class="string">"OnUnchecked1_BeginStoryboard"</span> <span class="attr">Storyboard</span>=<span class="string">"&#123;StaticResource OnUnchecked1&#125;"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;/<span class="name">EventTrigger</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;<span class="name">EventTrigger</span> <span class="attr">RoutedEvent</span>=<span class="string">"ToggleButton.Checked"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">BeginStoryboard</span> <span class="attr">x:Name</span>=<span class="string">"OnChecked1_BeginStoryboard"</span> <span class="attr">Storyboard</span>=<span class="string">"&#123;StaticResource OnChecked1&#125;"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;/<span class="name">EventTrigger</span>&gt;</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;/<span class="name">ControlTemplate.Triggers</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;/<span class="name">ControlTemplate</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;/<span class="name">Setter.Value</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">Setter</span>&gt;</span></span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">Style</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+        
+            <div id="toc" class="toc-article">
+                <strong class="toc-title">文章目录</strong>
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Slide-Button-Use-ToogleButton"><span class="toc-text">Slide Button Use ToogleButton</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Slide-Button-Use-Checkbox"><span class="toc-text">Slide Button Use Checkbox</span></a></li></ol>
+            </div>
+        
+        <h1 id="Slide-Button-Use-ToogleButton"><a href="#Slide-Button-Use-ToogleButton" class="headerlink" title="Slide Button Use ToogleButton"></a>Slide Button Use ToogleButton</h1><p>The rendering for toggle button is:<br><img style="float: Left;" src="/images/ToggleButton.png" width="500" height="300"><br><br><br><a id="more"></a><br><!--0--><br>The Xaml code is the following:<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">LinearGradientBrush</span> <span class="attr">x:Key</span>=<span class="string">"ButtonNormalBackgroundFill"</span> <span class="attr">EndPoint</span>=<span class="string">"0.5,1"</span> <span class="attr">StartPoint</span>=<span class="string">"0.5,0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">GradientStop</span> <span class="attr">Color</span>=<span class="string">"#FFFFFFFF"</span> <span class="attr">Offset</span>=<span class="string">"0"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">GradientStop</span> <span class="attr">Color</span>=<span class="string">"#FFF0F0EA"</span> <span class="attr">Offset</span>=<span class="string">"0.9"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">LinearGradientBrush</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">SolidColorBrush</span> <span class="attr">x:Key</span>=<span class="string">"ButtonBorder"</span> <span class="attr">Color</span>=<span class="string">"#FF003C74"</span>/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">Style</span> <span class="attr">x:Key</span>=<span class="string">"ToggleButtonStyle1"</span> <span class="attr">TargetType</span>=<span class="string">"&#123;x:Type ToggleButton&#125;"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"FocusVisualStyle"</span> <span class="attr">Value</span>=<span class="string">"&#123;x:Null&#125;"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"Background"</span> <span class="attr">Value</span>=<span class="string">"&#123;StaticResource ButtonNormalBackgroundFill&#125;"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"BorderBrush"</span> <span class="attr">Value</span>=<span class="string">"&#123;StaticResource ButtonBorder&#125;"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"Foreground"</span> <span class="attr">Value</span>=<span class="string">"&#123;DynamicResource &#123;x:Static SystemColors.ControlTextBrushKey&#125;&#125;"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"HorizontalContentAlignment"</span> <span class="attr">Value</span>=<span class="string">"Center"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"VerticalContentAlignment"</span> <span class="attr">Value</span>=<span class="string">"Center"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"Template"</span>&gt;</span></span></span><br><span class="line"><span class="css">        &lt;<span class="selector-tag">Setter</span><span class="selector-class">.Value</span>&gt;</span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">ControlTemplate</span> <span class="attr">TargetType</span>=<span class="string">"&#123;x:Type ToggleButton&#125;"</span>&gt;</span></span></span><br><span class="line"><span class="css">                &lt;<span class="selector-tag">ControlTemplate</span><span class="selector-class">.Resources</span>&gt;</span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;<span class="name">Storyboard</span> <span class="attr">x:Key</span>=<span class="string">"OnUnchecked1"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">ThicknessAnimationUsingKeyFrames</span> <span class="attr">Storyboard.TargetProperty</span>=<span class="string">"(FrameworkElement.Margin)"</span> <span class="attr">Storyboard.TargetName</span>=<span class="string">"path"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingThicknessKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0"</span> <span class="attr">Value</span>=<span class="string">"-60,0,0,0"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingThicknessKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0:0:0.5"</span> <span class="attr">Value</span>=<span class="string">"0"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">ThicknessAnimationUsingKeyFrames</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">ThicknessAnimationUsingKeyFrames</span> <span class="attr">Storyboard.TargetProperty</span>=<span class="string">"(FrameworkElement.Margin)"</span> <span class="attr">Storyboard.TargetName</span>=<span class="string">"path1"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingThicknessKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0"</span> <span class="attr">Value</span>=<span class="string">"-60,0,0,0"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingThicknessKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0:0:0.5"</span> <span class="attr">Value</span>=<span class="string">"0"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">ThicknessAnimationUsingKeyFrames</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">ThicknessAnimationUsingKeyFrames</span> <span class="attr">Storyboard.TargetProperty</span>=<span class="string">"(FrameworkElement.Margin)"</span> <span class="attr">Storyboard.TargetName</span>=<span class="string">"path2"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingThicknessKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0"</span> <span class="attr">Value</span>=<span class="string">"-60,0,0,0"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingThicknessKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0:0:0.5"</span> <span class="attr">Value</span>=<span class="string">"0"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">ThicknessAnimationUsingKeyFrames</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">StringAnimationUsingKeyFrames</span> <span class="attr">Storyboard.TargetProperty</span>=<span class="string">"(TextBlock.Text)"</span> <span class="attr">Storyboard.TargetName</span>=<span class="string">"displayText"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">DiscreteStringKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0"</span> <span class="attr">Value</span>=<span class="string">"OFF"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">StringAnimationUsingKeyFrames</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">ColorAnimationUsingKeyFrames</span> <span class="attr">Storyboard.TargetProperty</span>=<span class="string">"(TextElement.Foreground).(SolidColorBrush.Color)"</span> <span class="attr">Storyboard.TargetName</span>=<span class="string">"displayText"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingColorKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0"</span> <span class="attr">Value</span>=<span class="string">"White"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingColorKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0:0:1"</span> <span class="attr">Value</span>=<span class="string">"Red"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">ColorAnimationUsingKeyFrames</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;/<span class="name">Storyboard</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;<span class="name">Storyboard</span> <span class="attr">x:Key</span>=<span class="string">"OnChecked1"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">ThicknessAnimationUsingKeyFrames</span> <span class="attr">Storyboard.TargetProperty</span>=<span class="string">"(FrameworkElement.Margin)"</span> <span class="attr">Storyboard.TargetName</span>=<span class="string">"path"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingThicknessKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0:0:0.5"</span> <span class="attr">Value</span>=<span class="string">"-60,0,0,0"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">ThicknessAnimationUsingKeyFrames</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">ThicknessAnimationUsingKeyFrames</span> <span class="attr">Storyboard.TargetProperty</span>=<span class="string">"(FrameworkElement.Margin)"</span> <span class="attr">Storyboard.TargetName</span>=<span class="string">"path1"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingThicknessKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0:0:0.5"</span> <span class="attr">Value</span>=<span class="string">"-60,0,0,0"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">ThicknessAnimationUsingKeyFrames</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">ThicknessAnimationUsingKeyFrames</span> <span class="attr">Storyboard.TargetProperty</span>=<span class="string">"(FrameworkElement.Margin)"</span> <span class="attr">Storyboard.TargetName</span>=<span class="string">"path2"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingThicknessKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0:0:0.5"</span> <span class="attr">Value</span>=<span class="string">"-60,0,0,0"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">ThicknessAnimationUsingKeyFrames</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">StringAnimationUsingKeyFrames</span> <span class="attr">Storyboard.TargetProperty</span>=<span class="string">"(TextBlock.Text)"</span> <span class="attr">Storyboard.TargetName</span>=<span class="string">"displayText"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">DiscreteStringKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0"</span> <span class="attr">Value</span>=<span class="string">"ON"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">StringAnimationUsingKeyFrames</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">ColorAnimationUsingKeyFrames</span> <span class="attr">Storyboard.TargetProperty</span>=<span class="string">"(TextElement.Foreground).(SolidColorBrush.Color)"</span> <span class="attr">Storyboard.TargetName</span>=<span class="string">"displayText"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingColorKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0"</span> <span class="attr">Value</span>=<span class="string">"White"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingColorKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0:0:1"</span> <span class="attr">Value</span>=<span class="string">"#FF63FA00"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">ColorAnimationUsingKeyFrames</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;/<span class="name">Storyboard</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;/<span class="name">ControlTemplate.Resources</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">Border</span> <span class="attr">CornerRadius</span>=<span class="string">"15"</span> <span class="attr">Background</span>=<span class="string">"#FF3B3939"</span> <span class="attr">Width</span>=<span class="string">"90"</span> <span class="attr">Height</span>=<span class="string">"30"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;<span class="name">Grid</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">x:Name</span>=<span class="string">"displayText"</span> <span class="attr">Text</span>=<span class="string">"OFF"</span> <span class="attr">Foreground</span>=<span class="string">"Red"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Center"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span> &gt;</span><span class="tag">&lt;/<span class="name">TextBlock</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">Path</span> <span class="attr">x:Name</span>=<span class="string">"path2"</span> <span class="attr">Fill</span>=<span class="string">"Black"</span>&gt;</span></span></span><br><span class="line"><span class="css">                            &lt;<span class="selector-tag">Path</span><span class="selector-class">.Data</span>&gt;</span></span><br><span class="line"><span class="xml">                                <span class="tag">&lt;<span class="name">GeometryGroup</span>&gt;</span></span></span><br><span class="line"><span class="css">                                    &lt;<span class="selector-tag">GeometryGroup</span><span class="selector-class">.Children</span>&gt;</span></span><br><span class="line"><span class="xml">                                        <span class="tag">&lt;<span class="name">EllipseGeometry</span> <span class="attr">Center</span>=<span class="string">"75,15"</span> <span class="attr">RadiusX</span>=<span class="string">"14"</span> <span class="attr">RadiusY</span>=<span class="string">"14"</span>&gt;</span><span class="tag">&lt;/<span class="name">EllipseGeometry</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                    <span class="tag">&lt;/<span class="name">GeometryGroup.Children</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                <span class="tag">&lt;/<span class="name">GeometryGroup</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;/<span class="name">Path.Data</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">Path</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">Path</span> <span class="attr">x:Name</span>=<span class="string">"path1"</span> <span class="attr">Fill</span>=<span class="string">"#FF818080"</span>&gt;</span></span></span><br><span class="line"><span class="css">                            &lt;<span class="selector-tag">Path</span><span class="selector-class">.Data</span>&gt;</span></span><br><span class="line"><span class="xml">                                <span class="tag">&lt;<span class="name">GeometryGroup</span>&gt;</span></span></span><br><span class="line"><span class="css">                                    &lt;<span class="selector-tag">GeometryGroup</span><span class="selector-class">.Children</span>&gt;</span></span><br><span class="line"><span class="xml">                                        <span class="tag">&lt;<span class="name">EllipseGeometry</span> <span class="attr">Center</span>=<span class="string">"75,15"</span> <span class="attr">RadiusX</span>=<span class="string">"14"</span> <span class="attr">RadiusY</span>=<span class="string">"14"</span>&gt;</span><span class="tag">&lt;/<span class="name">EllipseGeometry</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                    <span class="tag">&lt;/<span class="name">GeometryGroup.Children</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                <span class="tag">&lt;/<span class="name">GeometryGroup</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;/<span class="name">Path.Data</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">Path</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">Path</span> <span class="attr">x:Name</span>=<span class="string">"path"</span>&gt;</span></span></span><br><span class="line"><span class="css">                            &lt;<span class="selector-tag">Path</span><span class="selector-class">.Fill</span>&gt;</span></span><br><span class="line"><span class="xml">                                <span class="tag">&lt;<span class="name">LinearGradientBrush</span> <span class="attr">EndPoint</span>=<span class="string">"0.5,1"</span> <span class="attr">StartPoint</span>=<span class="string">"0.5,0"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                    <span class="tag">&lt;<span class="name">GradientStop</span> <span class="attr">Color</span>=<span class="string">"#FF807F7F"</span> <span class="attr">Offset</span>=<span class="string">"0"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                                    <span class="tag">&lt;<span class="name">GradientStop</span> <span class="attr">Color</span>=<span class="string">"#FF373636"</span> <span class="attr">Offset</span>=<span class="string">"1"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                                <span class="tag">&lt;/<span class="name">LinearGradientBrush</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;/<span class="name">Path.Fill</span>&gt;</span></span></span><br><span class="line"><span class="css">                            &lt;<span class="selector-tag">Path</span><span class="selector-class">.Data</span>&gt;</span></span><br><span class="line"><span class="xml">                                <span class="tag">&lt;<span class="name">GeometryGroup</span>&gt;</span></span></span><br><span class="line"><span class="css">                                    &lt;<span class="selector-tag">GeometryGroup</span><span class="selector-class">.Children</span>&gt;</span></span><br><span class="line"><span class="xml">                                        <span class="tag">&lt;<span class="name">EllipseGeometry</span> <span class="attr">Center</span>=<span class="string">"75,15"</span> <span class="attr">RadiusX</span>=<span class="string">"14"</span> <span class="attr">RadiusY</span>=<span class="string">"14"</span>&gt;</span><span class="tag">&lt;/<span class="name">EllipseGeometry</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                    <span class="tag">&lt;/<span class="name">GeometryGroup.Children</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                <span class="tag">&lt;/<span class="name">GeometryGroup</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;/<span class="name">Path.Data</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">Path</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;/<span class="name">Grid</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span></span><br><span class="line"><span class="css">                &lt;<span class="selector-tag">ControlTemplate</span><span class="selector-class">.Triggers</span>&gt;</span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;<span class="name">EventTrigger</span> <span class="attr">RoutedEvent</span>=<span class="string">"ToggleButton.Unchecked"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">BeginStoryboard</span> <span class="attr">x:Name</span>=<span class="string">"OnUnchecked1_BeginStoryboard"</span> <span class="attr">Storyboard</span>=<span class="string">"&#123;StaticResource OnUnchecked1&#125;"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;/<span class="name">EventTrigger</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;<span class="name">EventTrigger</span> <span class="attr">RoutedEvent</span>=<span class="string">"ToggleButton.Checked"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">BeginStoryboard</span> <span class="attr">x:Name</span>=<span class="string">"OnChecked1_BeginStoryboard"</span> <span class="attr">Storyboard</span>=<span class="string">"&#123;StaticResource OnChecked1&#125;"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;/<span class="name">EventTrigger</span>&gt;</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;/<span class="name">ControlTemplate.Triggers</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;/<span class="name">ControlTemplate</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;/<span class="name">Setter.Value</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">Setter</span>&gt;</span></span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">Style</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p>And We can define the Toggle Button:<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ToggleButton</span> <span class="attr">Name</span>=<span class="string">"LCCSwitchButton"</span> <span class="attr">Content</span>=<span class="string">"LCC"</span> <span class="attr">FontFamily</span>=<span class="string">"Arial"</span> <span class="attr">Checked</span>=<span class="string">"LCCSwitchButton_Checked"</span> <span class="attr">Unchecked</span>=<span class="string">"LCCSwitchButton_Unchecked"</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource ToggleButtonStyle1&#125;"</span>  <span class="attr">FontStyle</span>=<span class="string">"Normal"</span> <span class="attr">FontWeight</span>=<span class="string">"Bold"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Left"</span> <span class="attr">Margin</span>=<span class="string">"184,75,0,0"</span>  <span class="attr">VerticalAlignment</span>=<span class="string">"Top"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ToggleButton</span> <span class="attr">Name</span>=<span class="string">"ProductionSwitchButton"</span> <span class="attr">Content</span>=<span class="string">"Production"</span> <span class="attr">FontFamily</span>=<span class="string">"Arial"</span> <span class="attr">Checked</span>=<span class="string">"ProductionSwitchButton_Checked"</span> <span class="attr">Unchecked</span>=<span class="string">"ProductionSwitchButton_Unchecked"</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource ToggleButtonStyle1&#125;"</span>  <span class="attr">FontStyle</span>=<span class="string">"Normal"</span> <span class="attr">FontWeight</span>=<span class="string">"Bold"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Left"</span> <span class="attr">Margin</span>=<span class="string">"513,75,0,0"</span>  <span class="attr">VerticalAlignment</span>=<span class="string">"Top"</span> /&gt;</span></span><br></pre></td></tr></table></figure></p>
-<h1 id="Slide-Button-Use-Checkbox"><a href="#Slide-Button-Use-Checkbox" class="headerlink" title="Slide Button Use Checkbox"></a>Slide Button Use Checkbox</h1><p>The rendering for Checkbox is:<br><img style="float: Left;" src="/images/checkbox.png" width="500" height="300"><br><br><br>The Xaml code is the following:<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Style</span> <span class="attr">x:Key</span>=<span class="string">"SliderCheckBox"</span> <span class="attr">TargetType</span>=<span class="string">"&#123;x:Type CheckBox&#125;"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"Foreground"</span> <span class="attr">Value</span>=<span class="string">"&#123;DynamicResource &#123;x:Static SystemColors.ControlTextBrushKey&#125;&#125;"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"BorderThickness"</span> <span class="attr">Value</span>=<span class="string">"1"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"Cursor"</span> <span class="attr">Value</span>=<span class="string">"Hand"</span> /&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"Template"</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">Setter.Value</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">ControlTemplate</span> <span class="attr">TargetType</span>=<span class="string">"&#123;x:Type CheckBox&#125;"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">ControlTemplate.Resources</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;<span class="name">Storyboard</span> <span class="attr">x:Key</span>=<span class="string">"StoryboardIsChecked"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">DoubleAnimationUsingKeyFrames</span> <span class="attr">Storyboard.TargetProperty</span>=<span class="string">"(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)"</span> <span class="attr">Storyboard.TargetName</span>=<span class="string">"CheckFlag"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingDoubleKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0"</span> <span class="attr">Value</span>=<span class="string">"0"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingDoubleKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0:0:0.2"</span> <span class="attr">Value</span>=<span class="string">"40"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">DoubleAnimationUsingKeyFrames</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;/<span class="name">Storyboard</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;<span class="name">Storyboard</span> <span class="attr">x:Key</span>=<span class="string">"StoryboardIsCheckedOff"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">DoubleAnimationUsingKeyFrames</span> <span class="attr">Storyboard.TargetProperty</span>=<span class="string">"(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)"</span> <span class="attr">Storyboard.TargetName</span>=<span class="string">"CheckFlag"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingDoubleKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0"</span> <span class="attr">Value</span>=<span class="string">"40"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingDoubleKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0:0:0.2"</span> <span class="attr">Value</span>=<span class="string">"0"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">DoubleAnimationUsingKeyFrames</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;/<span class="name">Storyboard</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;/<span class="name">ControlTemplate.Resources</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">BulletDecorator</span> <span class="attr">Background</span>=<span class="string">"Transparent"</span> <span class="attr">SnapsToDevicePixels</span>=<span class="string">"true"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;<span class="name">BulletDecorator.Bullet</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">Border</span> <span class="attr">x:Name</span>=<span class="string">"ForegroundPanel"</span> <span class="attr">BorderThickness</span>=<span class="string">"0"</span> <span class="attr">Width</span>=<span class="string">"70"</span> <span class="attr">Height</span>=<span class="string">"30"</span> <span class="attr">CornerRadius</span>=<span class="string">"15"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">Canvas</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Background</span>=<span class="string">"White"</span> <span class="attr">x:Name</span>=<span class="string">"CheckFlag"</span> <span class="attr">CornerRadius</span>=<span class="string">"15"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span> <span class="attr">BorderThickness</span>=<span class="string">"1"</span> <span class="attr">Width</span>=<span class="string">"30"</span> <span class="attr">Height</span>=<span class="string">"30"</span> <span class="attr">RenderTransformOrigin</span>=<span class="string">"0.5,0.5"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                    <span class="tag">&lt;<span class="name">Border.RenderTransform</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                        <span class="tag">&lt;<span class="name">TransformGroup</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                            <span class="tag">&lt;<span class="name">ScaleTransform</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                                            <span class="tag">&lt;<span class="name">SkewTransform</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                                            <span class="tag">&lt;<span class="name">RotateTransform</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                                            <span class="tag">&lt;<span class="name">TranslateTransform</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                                        <span class="tag">&lt;/<span class="name">TransformGroup</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                    <span class="tag">&lt;/<span class="name">Border.RenderTransform</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                    <span class="tag">&lt;<span class="name">Border.Effect</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                        <span class="tag">&lt;<span class="name">DropShadowEffect</span> <span class="attr">ShadowDepth</span>=<span class="string">"1"</span> <span class="attr">Direction</span>=<span class="string">"180"</span> /&gt;</span></span></span><br><span class="line"><span class="xml">                                    <span class="tag">&lt;/<span class="name">Border.Effect</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;/<span class="name">Canvas</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;/<span class="name">BulletDecorator.Bullet</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;<span class="name">ContentPresenter</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"&#123;TemplateBinding HorizontalContentAlignment&#125;"</span> <span class="attr">Margin</span>=<span class="string">"&#123;TemplateBinding Padding&#125;"</span> <span class="attr">RecognizesAccessKey</span>=<span class="string">"True"</span> <span class="attr">SnapsToDevicePixels</span>=<span class="string">"&#123;TemplateBinding SnapsToDevicePixels&#125;"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;/<span class="name">BulletDecorator</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">ControlTemplate.Triggers</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;<span class="name">Trigger</span> <span class="attr">Property</span>=<span class="string">"HasContent"</span> <span class="attr">Value</span>=<span class="string">"true"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"FocusVisualStyle"</span> <span class="attr">Value</span>=<span class="string">"&#123;StaticResource CheckRadioFocusVisual&#125;"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"Padding"</span> <span class="attr">Value</span>=<span class="string">"4,0,0,0"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;/<span class="name">Trigger</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;<span class="name">Trigger</span> <span class="attr">Property</span>=<span class="string">"IsEnabled"</span> <span class="attr">Value</span>=<span class="string">"false"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"Foreground"</span> <span class="attr">Value</span>=<span class="string">"&#123;DynamicResource &#123;x:Static SystemColors.GrayTextBrushKey&#125;&#125;"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;/<span class="name">Trigger</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;<span class="name">Trigger</span> <span class="attr">Property</span>=<span class="string">"IsChecked"</span> <span class="attr">Value</span>=<span class="string">"True"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="comment">&lt;!--&lt;Setter TargetName="ForegroundPanel" Property="Background" Value="&#123;DynamicResource Accent&#125;" /&gt;--&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">TargetName</span>=<span class="string">"ForegroundPanel"</span> <span class="attr">Property</span>=<span class="string">"Background"</span> <span class="attr">Value</span>=<span class="string">"Green"</span> /&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">Trigger.EnterActions</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">BeginStoryboard</span> <span class="attr">x:Name</span>=<span class="string">"BeginStoryboardCheckedTrue"</span> <span class="attr">Storyboard</span>=<span class="string">"&#123;StaticResource StoryboardIsChecked&#125;"</span> /&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">RemoveStoryboard</span> <span class="attr">BeginStoryboardName</span>=<span class="string">"BeginStoryboardCheckedFalse"</span> /&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">Trigger.EnterActions</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;/<span class="name">Trigger</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;<span class="name">Trigger</span> <span class="attr">Property</span>=<span class="string">"IsChecked"</span> <span class="attr">Value</span>=<span class="string">"False"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">TargetName</span>=<span class="string">"ForegroundPanel"</span> <span class="attr">Property</span>=<span class="string">"Background"</span> <span class="attr">Value</span>=<span class="string">"Gray"</span> /&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">Trigger.EnterActions</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">BeginStoryboard</span> <span class="attr">x:Name</span>=<span class="string">"BeginStoryboardCheckedFalse"</span> <span class="attr">Storyboard</span>=<span class="string">"&#123;StaticResource StoryboardIsCheckedOff&#125;"</span> /&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">RemoveStoryboard</span> <span class="attr">BeginStoryboardName</span>=<span class="string">"BeginStoryboardCheckedTrue"</span> /&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">Trigger.EnterActions</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;/<span class="name">Trigger</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;/<span class="name">ControlTemplate.Triggers</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;/<span class="name">ControlTemplate</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;/<span class="name">Setter.Value</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">Setter</span>&gt;</span></span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">Style</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="Slide-Button-Use-Checkbox"><a href="#Slide-Button-Use-Checkbox" class="headerlink" title="Slide Button Use Checkbox"></a>Slide Button Use Checkbox</h1><p>The rendering for Checkbox is:<br><img style="float: Left;" src="/images/checkbox.png" width="500" height="300"><br><br><br>The Xaml code is the following:<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Style</span> <span class="attr">x:Key</span>=<span class="string">"SliderCheckBox"</span> <span class="attr">TargetType</span>=<span class="string">"&#123;x:Type CheckBox&#125;"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"Foreground"</span> <span class="attr">Value</span>=<span class="string">"&#123;DynamicResource &#123;x:Static SystemColors.ControlTextBrushKey&#125;&#125;"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"BorderThickness"</span> <span class="attr">Value</span>=<span class="string">"1"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"Cursor"</span> <span class="attr">Value</span>=<span class="string">"Hand"</span> /&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"Template"</span>&gt;</span></span></span><br><span class="line"><span class="css">        &lt;<span class="selector-tag">Setter</span><span class="selector-class">.Value</span>&gt;</span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">ControlTemplate</span> <span class="attr">TargetType</span>=<span class="string">"&#123;x:Type CheckBox&#125;"</span>&gt;</span></span></span><br><span class="line"><span class="css">                &lt;<span class="selector-tag">ControlTemplate</span><span class="selector-class">.Resources</span>&gt;</span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;<span class="name">Storyboard</span> <span class="attr">x:Key</span>=<span class="string">"StoryboardIsChecked"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">DoubleAnimationUsingKeyFrames</span> <span class="attr">Storyboard.TargetProperty</span>=<span class="string">"(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)"</span> <span class="attr">Storyboard.TargetName</span>=<span class="string">"CheckFlag"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingDoubleKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0"</span> <span class="attr">Value</span>=<span class="string">"0"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingDoubleKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0:0:0.2"</span> <span class="attr">Value</span>=<span class="string">"40"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">DoubleAnimationUsingKeyFrames</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;/<span class="name">Storyboard</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;<span class="name">Storyboard</span> <span class="attr">x:Key</span>=<span class="string">"StoryboardIsCheckedOff"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">DoubleAnimationUsingKeyFrames</span> <span class="attr">Storyboard.TargetProperty</span>=<span class="string">"(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)"</span> <span class="attr">Storyboard.TargetName</span>=<span class="string">"CheckFlag"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingDoubleKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0"</span> <span class="attr">Value</span>=<span class="string">"40"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">EasingDoubleKeyFrame</span> <span class="attr">KeyTime</span>=<span class="string">"0:0:0.2"</span> <span class="attr">Value</span>=<span class="string">"0"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">DoubleAnimationUsingKeyFrames</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;/<span class="name">Storyboard</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;/<span class="name">ControlTemplate.Resources</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">BulletDecorator</span> <span class="attr">Background</span>=<span class="string">"Transparent"</span> <span class="attr">SnapsToDevicePixels</span>=<span class="string">"true"</span>&gt;</span></span></span><br><span class="line"><span class="css">                    &lt;<span class="selector-tag">BulletDecorator</span><span class="selector-class">.Bullet</span>&gt;</span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">Border</span> <span class="attr">x:Name</span>=<span class="string">"ForegroundPanel"</span> <span class="attr">BorderThickness</span>=<span class="string">"0"</span> <span class="attr">Width</span>=<span class="string">"70"</span> <span class="attr">Height</span>=<span class="string">"30"</span> <span class="attr">CornerRadius</span>=<span class="string">"15"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">Canvas</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Background</span>=<span class="string">"White"</span> <span class="attr">x:Name</span>=<span class="string">"CheckFlag"</span> <span class="attr">CornerRadius</span>=<span class="string">"15"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span> <span class="attr">BorderThickness</span>=<span class="string">"1"</span> <span class="attr">Width</span>=<span class="string">"30"</span> <span class="attr">Height</span>=<span class="string">"30"</span> <span class="attr">RenderTransformOrigin</span>=<span class="string">"0.5,0.5"</span>&gt;</span></span></span><br><span class="line"><span class="css">                                    &lt;<span class="selector-tag">Border</span><span class="selector-class">.RenderTransform</span>&gt;</span></span><br><span class="line"><span class="xml">                                        <span class="tag">&lt;<span class="name">TransformGroup</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                            <span class="tag">&lt;<span class="name">ScaleTransform</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                                            <span class="tag">&lt;<span class="name">SkewTransform</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                                            <span class="tag">&lt;<span class="name">RotateTransform</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                                            <span class="tag">&lt;<span class="name">TranslateTransform</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                                        <span class="tag">&lt;/<span class="name">TransformGroup</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                    <span class="tag">&lt;/<span class="name">Border.RenderTransform</span>&gt;</span></span></span><br><span class="line"><span class="css">                                    &lt;<span class="selector-tag">Border</span><span class="selector-class">.Effect</span>&gt;</span></span><br><span class="line"><span class="xml">                                        <span class="tag">&lt;<span class="name">DropShadowEffect</span> <span class="attr">ShadowDepth</span>=<span class="string">"1"</span> <span class="attr">Direction</span>=<span class="string">"180"</span> /&gt;</span></span></span><br><span class="line"><span class="xml">                                    <span class="tag">&lt;/<span class="name">Border.Effect</span>&gt;</span></span></span><br><span class="line"><span class="xml">                                <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;/<span class="name">Canvas</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;/<span class="name">BulletDecorator.Bullet</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;<span class="name">ContentPresenter</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"&#123;TemplateBinding HorizontalContentAlignment&#125;"</span> <span class="attr">Margin</span>=<span class="string">"&#123;TemplateBinding Padding&#125;"</span> <span class="attr">RecognizesAccessKey</span>=<span class="string">"True"</span> <span class="attr">SnapsToDevicePixels</span>=<span class="string">"&#123;TemplateBinding SnapsToDevicePixels&#125;"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;/<span class="name">BulletDecorator</span>&gt;</span></span></span><br><span class="line"><span class="css">                &lt;<span class="selector-tag">ControlTemplate</span><span class="selector-class">.Triggers</span>&gt;</span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;<span class="name">Trigger</span> <span class="attr">Property</span>=<span class="string">"HasContent"</span> <span class="attr">Value</span>=<span class="string">"true"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"FocusVisualStyle"</span> <span class="attr">Value</span>=<span class="string">"&#123;StaticResource CheckRadioFocusVisual&#125;"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"Padding"</span> <span class="attr">Value</span>=<span class="string">"4,0,0,0"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;/<span class="name">Trigger</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;<span class="name">Trigger</span> <span class="attr">Property</span>=<span class="string">"IsEnabled"</span> <span class="attr">Value</span>=<span class="string">"false"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"Foreground"</span> <span class="attr">Value</span>=<span class="string">"&#123;DynamicResource &#123;x:Static SystemColors.GrayTextBrushKey&#125;&#125;"</span>/&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;/<span class="name">Trigger</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;<span class="name">Trigger</span> <span class="attr">Property</span>=<span class="string">"IsChecked"</span> <span class="attr">Value</span>=<span class="string">"True"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="comment">&lt;!--&lt;Setter TargetName="ForegroundPanel" Property="Background" Value="&#123;DynamicResource Accent&#125;" /&gt;--&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">TargetName</span>=<span class="string">"ForegroundPanel"</span> <span class="attr">Property</span>=<span class="string">"Background"</span> <span class="attr">Value</span>=<span class="string">"Green"</span> /&gt;</span></span></span><br><span class="line"><span class="css">                        &lt;<span class="selector-tag">Trigger</span><span class="selector-class">.EnterActions</span>&gt;</span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">BeginStoryboard</span> <span class="attr">x:Name</span>=<span class="string">"BeginStoryboardCheckedTrue"</span> <span class="attr">Storyboard</span>=<span class="string">"&#123;StaticResource StoryboardIsChecked&#125;"</span> /&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">RemoveStoryboard</span> <span class="attr">BeginStoryboardName</span>=<span class="string">"BeginStoryboardCheckedFalse"</span> /&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">Trigger.EnterActions</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;/<span class="name">Trigger</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;<span class="name">Trigger</span> <span class="attr">Property</span>=<span class="string">"IsChecked"</span> <span class="attr">Value</span>=<span class="string">"False"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">TargetName</span>=<span class="string">"ForegroundPanel"</span> <span class="attr">Property</span>=<span class="string">"Background"</span> <span class="attr">Value</span>=<span class="string">"Gray"</span> /&gt;</span></span></span><br><span class="line"><span class="css">                        &lt;<span class="selector-tag">Trigger</span><span class="selector-class">.EnterActions</span>&gt;</span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">BeginStoryboard</span> <span class="attr">x:Name</span>=<span class="string">"BeginStoryboardCheckedFalse"</span> <span class="attr">Storyboard</span>=<span class="string">"&#123;StaticResource StoryboardIsCheckedOff&#125;"</span> /&gt;</span></span></span><br><span class="line"><span class="xml">                            <span class="tag">&lt;<span class="name">RemoveStoryboard</span> <span class="attr">BeginStoryboardName</span>=<span class="string">"BeginStoryboardCheckedTrue"</span> /&gt;</span></span></span><br><span class="line"><span class="xml">                        <span class="tag">&lt;/<span class="name">Trigger.EnterActions</span>&gt;</span></span></span><br><span class="line"><span class="xml">                    <span class="tag">&lt;/<span class="name">Trigger</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;/<span class="name">ControlTemplate.Triggers</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;/<span class="name">ControlTemplate</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;/<span class="name">Setter.Value</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">Setter</span>&gt;</span></span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">Style</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p>And We can define the Toggle Button:<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">CheckBox</span> <span class="attr">Name</span>=<span class="string">"LCCSwitchCheckbox"</span> <span class="attr">Margin</span>=<span class="string">"184,75,1023,617"</span> <span class="attr">Checked</span>=<span class="string">"LCCSwitchButton_Checked"</span> <span class="attr">Unchecked</span>=<span class="string">"LCCSwitchButton_Unchecked"</span> <span class="attr">Style</span>=<span class="string">"&#123;DynamicResource SliderCheckBox&#125;"</span> <span class="attr">Content</span>=<span class="string">"&#123;Binding ElementName=LCCSwitchButton_Checked,Path=IsChecked&#125;"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">CheckBox</span> <span class="attr">Name</span>=<span class="string">"ProductionSwitchCheckbox"</span> <span class="attr">Margin</span>=<span class="string">"513,75,694,617"</span> <span class="attr">Checked</span>=<span class="string">"ProductionSwitchButton_Checked"</span> <span class="attr">Unchecked</span>=<span class="string">"ProductionSwitchButton_Unchecked"</span> <span class="attr">Style</span>=<span class="string">"&#123;DynamicResource SliderCheckBox&#125;"</span> <span class="attr">Content</span>=<span class="string">"&#123;Binding ElementName=ProductionSwitchCheckbox,Path=IsChecked&#125;"</span> /&gt;</span></span><br></pre></td></tr></table></figure></p>
 
       
     </div>
-
-    <div>
-      
-        
-
-      
-    </div>
-
-    <div>
-      
-        
-
-      
-    </div>
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/WPF/" rel="tag">#WPF</a>
-          
-            <a href="/tags/ToggleButton/" rel="tag">#ToggleButton</a>
-          
-            <a href="/tags/Checkbox/" rel="tag">#Checkbox</a>
-          
-        </div>
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2018/08/30/GetAwaiter-Error-in-UWP/" rel="next" title="GetAwaiter Error in UWP">
-                <i class="fa fa-chevron-left"></i> GetAwaiter Error in UWP
-              </a>
-            
-          </div>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </article>
-
-
-
-    <div class="post-spread">
-      
-    </div>
-  </div>
-
-
-          </div>
-          
-
-
-          
-  <div class="comments" id="comments">
-    
-      <div class="ds-thread" data-thread-key="2018/10/23/WPF-Use-Toggle-Button-And-Checkbox-Create-Slide-Button/"
-           data-title="WPF--Use Toggle Button And Checkbox Create Slide Button" data-url="http://clovel.cn/2018/10/23/WPF-Use-Toggle-Button-And-Checkbox-Create-Slide-Button/">
-      </div>
     
   </div>
-
-
-        </div>
-        
-          
   
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    <div class="sidebar-inner">
-
-      
-
-      
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            Overview
-          </li>
-        </ul>
-      
-
-      <section class="site-overview sidebar-panel ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/logo.JPG"
-               alt="Cheng Wang" />
-          <p class="site-author-name" itemprop="name">Cheng Wang</p>
-          <p class="site-description motion-element" itemprop="description">Start From Zero</p>
-        </div>
-        <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">14</span>
-              <span class="site-state-item-name">posts</span>
-            </a>
-          </div>
-
-          
-            <div class="site-state-item site-state-categories">
-              <a href="/categories">
-                <span class="site-state-item-count">7</span>
-                <span class="site-state-item-name">categories</span>
-              </a>
-            </div>
-          
-
-          
-            <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">29</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-
-        <div class="links-of-author motion-element">
-          
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/chengw1121" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-github"></i>
-                  
-                  GitHub
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/wangcheng1121" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-twitter"></i>
-                  
-                  Twitter
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://www.facebook.com/cheng.wang.5055233" target="_blank" title="Facebook">
-                  
-                    <i class="fa fa-fw fa-facebook"></i>
-                  
-                  Facebook
-                </a>
-              </span>
-            
-          
-        </div>
-
-        
-        
-          <div class="cc-license motion-element" itemprop="license">
-            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
-              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
-            </a>
-          </div>
-        
-
-        
-        
-      </section>
-
-      
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-            
-              
-            
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Slide-Button-Use-ToogleButton"><span class="nav-number">1.</span> <span class="nav-text">Slide Button Use ToogleButton</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Slide-Button-Use-Checkbox"><span class="nav-number">2.</span> <span class="nav-text">Slide Button Use Checkbox</span></a></li></ol></div>
-            
-          </div>
-        </section>
-      
-      <!-- hack一个虚线出来 -->
-      <section style="border-top:1px dotted #ccc;height:10px;"></section>
-      <!-- weibo show -->
-      <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=120&fansRow=2&ptype=1&speed=0&skin=5&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=2177694017&verifier=24dcfc20&dpc=1"></iframe>
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        
-
-        <div class="copyright" >
+    
+<nav id="article-nav">
   
-  &copy;  2017 - 
-  <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Cheng Wang</span>
+  
+    <a href="/2018/08/30/GetAwaiter-Error-in-UWP/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">GetAwaiter Error in UWP</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+
+  
+  
+    <div class ="post-donate">
+    <div id="donate_board" class="donate_bar center">
+        <a id="btn_donate" class="btn_donate" href="javascript:;" title="打赏"></a>
+        <span class="donate_txt">
+            &uarr;<br>
+                    Thank you！
+        </span>
+        <br>
+    </div>  
+    <div id="donate_guide" class="donate_bar center hidden" >
+            <!-- 支付宝打赏图案 -->
+            <img src="/img/zhifubao.jpg" alt="支付宝打赏"> 
+            <!-- 微信打赏图案 -->
+            <img src="/img/weixin.jpg" alt="微信打赏">  
+    </div>
+    <script type="text/javascript">
+        document.getElementById('btn_donate').onclick = function(){
+            $('#donate_board').addClass('hidden');
+            $('#donate_guide').removeClass('hidden');
+        }
+    </script>
+</div>
+
+  
+  
+    <div class="article-footer-copyright">
+    <p><span>本文标题:</span><a href="/2018/10/23/WPF-Use-Toggle-Button-And-Checkbox-Create-Slide-Button/">WPF--Use Toggle Button And Checkbox Create Slide Button</a></p>
+    <p><span>文章作者:</span><a href="/" title="请访问 Cheng Wang 博客">Cheng Wang</a></p>
+    <p><span>发布时间:</span>2018/10/23 - 23:02:24</p>
+    <p><span>最后更新:</span>2018/10/23 - 23:58:29</p>
+    <p>
+        <span>原始链接:</span><a class="post-url" href="/2018/10/23/WPF-Use-Toggle-Button-And-Checkbox-Create-Slide-Button/" title="WPF--Use Toggle Button And Checkbox Create Slide Button">http://clovel.cn/2018/10/23/WPF-Use-Toggle-Button-And-Checkbox-Create-Slide-Button/</a>
+        <span class="copy-path" data-clipboard-text="原文: http://clovel.cn/2018/10/23/WPF-Use-Toggle-Button-And-Checkbox-Create-Slide-Button/　　作者: Cheng Wang" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+        <script src="/js/clipboard.min.js"></script>
+        <script> var clipboard = new Clipboard('.copy-path'); </script>
+    </p>
+    <p>
+        <span>许可协议:</span><i class="fa fa-creative-commons"></i><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="中国大陆 (CC BY-NC-SA 4.0 CN)"> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+    </p>
+</div>
+
+  
+</article>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
 </div>
 
 
 
 
-        
-      </div>
-    </footer>
 
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="WPF-Use-Toggle-Button-And-Checkbox-Create-Slide-Button" data-title="WPF--Use Toggle Button And Checkbox Create Slide Button" data-url="http://clovel.cn/2018/10/23/WPF-Use-Toggle-Button-And-Checkbox-Create-Slide-Button/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2018 Cheng Wang
+    	</div>
+        <div class="footer-center">
+            <span id="busuanzi_container_site_uv">
+            本站访客数<span id="busuanzi_value_site_uv"></span>人次
+            </span>
+            <span id="busuanzi_container_page_pv">
+            本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+            </span>
+        </div>
     </div>
   </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
 
-  
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
 
 
+<div>
+   <a href="javascript:;" id="totop" title="回到顶部"></a> 
+</div>
+
+<script src="/js/totop.js"></script>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
 
 
-
-
-
-
-  
-
-
-
-  
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
-
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
-
-
-
-  
-
-  
-    
-  
-
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"clovec"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//neveryu.github.io/js/src/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementById('footer')
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
-
-  
-    
-    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-    <script src="/js/src/hook-duoshuo.js"></script>
-  
-
-
-
-
-
-
-  
-  
-
-  
-
-  
-
-  
-
-  <!-- 按需加载背景 -->
-  <!-- 识别手机或电脑的js开始 -->  
-  <script type="text/javascript">   
-  (function(){  
-    var res = GetRequest();  
-    var par = res['index'];  
-    if(par!='gfan'){  
-      var ua=navigator.userAgent.toLowerCase();  
-      var contains=function (a, b){  
-          if(a.indexOf(b)!=-1){return true;}  
-      };   
-      if((contains(ua,"android") && contains(ua,"mobile"))||(contains(ua,"android") && contains(ua,"mozilla"))||(contains(ua,"android") && contains(ua,"opera"))||contains(ua,"ucweb7")||contains(ua,"iphone")){
-        return false;
-      } else {
-        $.getScript("/js/src/particle.js");
-      }
-    }  
-  })();  
-  function GetRequest() {  
-    var url = location.search;
-    var theRequest = new Object();  
-    if (url.indexOf("?") != -1) {  
-      var str = url.substr(1);  
-      strs = str.split("&");  
-      for(var i = 0; i < strs.length; i ++) {  
-        theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);  
-      }  
-    }  
-    return theRequest;  
-  }  
-  </script>  
-  <!-- 识别手机或电脑的js结束 -->  
-
-  <!-- 背景动画 -->
-  <!-- <script type="text/javascript" src="/js/src/particle.js"></script> -->
-  <!-- 页面点击小红心 -->
-  <!-- <script type="text/javascript" src="/js/src/love.js"></script> -->
-
+  </div>
 </body>
 </html>
