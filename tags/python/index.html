@@ -87,7 +87,7 @@
 <meta name="description" content="Start From Zero">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Code_Cheng Site">
-<meta property="og:url" content="http://clovel.cn/tags/python/index.html">
+<meta property="og:url" content="http://clovel.cn/tags/Python/index.html">
 <meta property="og:site_name" content="Code_Cheng Site">
 <meta property="og:description" content="Start From Zero">
 <meta property="og:locale" content="en">
@@ -114,9 +114,9 @@
 
 
 
-  <link rel="canonical" href="http://clovel.cn/tags/python/"/>
+  <link rel="canonical" href="http://clovel.cn/tags/Python/"/>
 
-  <title> Tag: python | Code_Cheng Site </title>
+  <title> Tag: Python | Code_Cheng Site </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -446,7 +446,7 @@
   <div id="posts" class="posts-collapse">
     <div class="collection-title">
       <h2 >
-        python
+        Python
         <small>Tag</small>
       </h2>
     </div>
@@ -459,9 +459,9 @@
 
       <h1 class="post-title">
         
-            <a class="post-title-link" href="/2017/09/14/Make-an-Apple-Official-Website/" itemprop="url">
+            <a class="post-title-link" href="/2017/04/22/Python-and-Encoding/" itemprop="url">
               
-                <span itemprop="name">Make an Apple Official Website</span>
+                <span itemprop="name">Python and Encoding</span>
               
             </a>
         
@@ -469,9 +469,9 @@
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
-              datetime="2017-09-14T08:52:07+02:00"
-              content="2017-09-14" >
-          09-14
+              datetime="2017-04-22T09:45:59+02:00"
+              content="2017-04-22" >
+          04-22
         </time>
       </div>
 
@@ -487,9 +487,9 @@
 
       <h1 class="post-title">
         
-            <a class="post-title-link" href="/2017/03/27/Practice-1_-Tripadvisor-Attractions-Scapying-with-Python/" itemprop="url">
+            <a class="post-title-link" href="/2017/04/01/Practice-3_-Scrapying-58-Web-Site-List-And-Detail/" itemprop="url">
               
-                <span itemprop="name">Practice1：Tripadvisor Attractions Scapying with Python</span>
+                <span itemprop="name">Practice3: Scrapying 58 WebSite List And Detail</span>
               
             </a>
         
@@ -497,9 +497,9 @@
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-27T22:31:41+02:00"
-              content="2017-03-27" >
-          03-27
+              datetime="2017-04-01T21:59:24+02:00"
+              content="2017-04-01" >
+          04-01
         </time>
       </div>
 
@@ -515,37 +515,9 @@
 
       <h1 class="post-title">
         
-            <a class="post-title-link" href="/2016/05/31/Python_2_Exploring-Urllib-Library/" itemprop="url">
+            <a class="post-title-link" href="/2017/03/31/Practice-2_-Download-Scarlett-Pictures-From-WeHeartit-With-Python/" itemprop="url">
               
-                <span itemprop="name">Python专栏之二：Urllib库</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-05-31T15:37:28+02:00"
-              content="2016-05-31" >
-          05-31
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/05/28/Python_1_Say-hello-to-spider/" itemprop="url">
-              
-                <span itemprop="name">Python专栏之一：初识爬虫</span>
+                <span itemprop="name">Practice2：Download Scarlet Witch's Picture From WeHeartit WebSite</span>
               
             </a>
         
@@ -553,9 +525,9 @@
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
-              datetime="2016-05-28T23:15:14+02:00"
-              content="2016-05-28" >
-          05-28
+              datetime="2017-03-31T23:01:52+02:00"
+              content="2017-03-31" >
+          03-31
         </time>
       </div>
 
@@ -862,6 +834,28 @@
     }  
   })();  
   function GetRequest() {  
+    var url = location.search;
+    var theRequest = new Object();  
+    if (url.indexOf("?") != -1) {  
+      var str = url.substr(1);  
+      strs = str.split("&");  
+      for(var i = 0; i < strs.length; i ++) {  
+        theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);  
+      }  
+    }  
+    return theRequest;  
+  }  
+  </script>  
+  <!-- 识别手机或电脑的js结束 -->  
+
+  <!-- 背景动画 -->
+  <!-- <script type="text/javascript" src="/js/src/particle.js"></script> -->
+  <!-- 页面点击小红心 -->
+  <!-- <script type="text/javascript" src="/js/src/love.js"></script> -->
+
+</body>
+</html>
+tRequest() {  
     var url = location.search;
     var theRequest = new Object();  
     if (url.indexOf("?") != -1) {  
