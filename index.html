@@ -467,6 +467,127 @@
             
               
                 
+                <a class="post-title-link" href="/2018/11/09/WPF-Refresh-the-Main-Window-After-Child-Window-CLosed/" itemprop="url">
+                  WPF: Refresh the Main Window After Child Window CLosed
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2018-11-09T12:23:38+01:00" content="2018-11-09">
+              2018-11-09
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/WPF/" itemprop="url" rel="index">
+                    <span itemprop="name">WPF</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2018/11/09/WPF-Refresh-the-Main-Window-After-Child-Window-CLosed/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/11/09/WPF-Refresh-the-Main-Window-After-Child-Window-CLosed/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>If we want to refresh the main window or part of main window after we closed the child window.<br>We can use the closed event.<br>In the Main Window:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">private void uxTitleButton_Click(object sender, RoutedEventArgs e)</span><br><span class="line">&#123;</span><br><span class="line">    EditionEdit EditionEditWin = new EditionEdit();</span><br><span class="line">    try</span><br><span class="line">    &#123;</span><br><span class="line">        EditionEditWin.ChangeTextEvent += new ChangeTextHandler(EditionEditWinClosed);</span><br><span class="line">        EditionEditWin.ShowDialog();</span><br><span class="line">    &#125;</span><br><span class="line">    catch</span><br><span class="line">    &#123;               </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// This method can write the method that you want to call</span><br><span class="line">void EditionEditWinClosed()  </span><br><span class="line">&#123;</span><br><span class="line">    ComboBoxTitleShow();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>When Chick title button on the main window, it will open the new dialog EditionEdit, after we update the data, we will chose this window.<br>So, in child window, we can call the closed event:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">namespace FileImportTest</span><br><span class="line">&#123;</span><br><span class="line">    public delegate void ChangeTextHandler();</span><br><span class="line"></span><br><span class="line">    public partial class EditionEdit : Window</span><br><span class="line">    &#123;</span><br><span class="line">        public event ChangeTextHandler ChangeTextEvent;</span><br><span class="line"></span><br><span class="line">        public EditionEdit()</span><br><span class="line">        &#123;</span><br><span class="line">            InitializeComponent();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        private void Window_Closed(object sender, EventArgs e)</span><br><span class="line">        &#123;</span><br><span class="line">            StrikeEvent();</span><br><span class="line">        &#125;</span><br><span class="line">        private void StrikeEvent()</span><br><span class="line">        &#123;</span><br><span class="line">            if (ChangeTextEvent != null)</span><br><span class="line">            &#123;</span><br><span class="line">                ChangeTextEvent();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2018/10/23/WPF-Use-Toggle-Button-And-Checkbox-Create-Slide-Button/" itemprop="url">
                   WPF--Use Toggle Button And Checkbox Create Slide Button
                 </a>
@@ -1306,106 +1427,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/04/22/Practice-4-The-use-of-MongoDB-and-IPProxy/" itemprop="url">
-                  Practice 4: The use of MongoDB and IPProxy
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2017-04-22T10:09:15+02:00" content="2017-04-22">
-              2017-04-22
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2017/04/22/Practice-4-The-use-of-MongoDB-and-IPProxy/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/04/22/Practice-4-The-use-of-MongoDB-and-IPProxy/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1451,7 +1472,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">14</span>
+              <span class="site-state-item-count">15</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -1468,7 +1489,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">29</span>
+                <span class="site-state-item-count">30</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>
